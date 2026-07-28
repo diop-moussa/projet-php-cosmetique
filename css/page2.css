@@ -1,0 +1,950 @@
+/* =====================================================
+   RÉINITIALISATION GÉNÉRALE
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    min-height: 100%;
+
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    padding-bottom: 100px;
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.headercl {
+
+    width: 100%;
+
+    background-color: #f8f8f8;
+
+    position: relative;
+
+    z-index: 1000;
+
+}
+
+
+/* =====================================================
+   PARTIE SUPÉRIEURE DU HEADER
+===================================================== */
+
+.head {
+
+    width: 100%;
+
+    min-height: 130px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 40px;
+
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.login img {
+
+    width: 200px;
+
+    height: 100px;
+
+    object-fit: contain;
+
+}
+
+
+/* =====================================================
+   BOUTONS DE CONNEXION
+===================================================== */
+
+.space ul {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.space li {
+
+    list-style: none;
+
+}
+
+
+.btn-compte {
+
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    border: 1px solid #aaa;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+}
+
+
+.btn-compte:hover {
+
+    background-color: #eee;
+
+}
+
+
+.btn-compte-primaire {
+
+    background-color: black;
+
+    color: white;
+
+}
+
+
+.btn-compte-primaire:hover {
+
+    background-color: #333;
+
+    color: white;
+
+}
+
+
+.btn-compte-danger {
+
+    background-color: black;
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   BARRE DE NAVIGATION
+===================================================== */
+
+.nav {
+
+    width: calc(100% - 80px);
+
+    min-height: 50px;
+
+    margin: 0 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #cbc4c4;
+
+    border: 1px solid #999;
+
+}
+
+
+/* =====================================================
+   CATÉGORIES
+===================================================== */
+
+.nav ul {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 60px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.nav ul li {
+
+    list-style: none;
+
+}
+
+
+.nav ul li a {
+
+    display: block;
+
+    padding: 15px 10px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 16px;
+
+    white-space: nowrap;
+
+}
+
+
+.nav ul li a:hover {
+
+    color: blue;
+
+}
+
+
+/* =====================================================
+   CONTENEUR PRINCIPAL
+===================================================== */
+
+.containtglob {
+
+    width: 100%;
+
+    margin-top: 60px;
+
+    margin-bottom: 50px;
+
+    padding: 0 40px 40px 40px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 30px;
+
+}
+
+
+/* =====================================================
+   PARTIE IMAGE
+===================================================== */
+
+.containte {
+
+    width: 60%;
+
+    min-height: 500px;
+
+    border: 1px solid black;
+
+}
+
+
+.art {
+
+    width: 100%;
+
+    min-height: 500px;
+
+    padding: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.art img {
+
+    max-width: 100%;
+
+    max-height: 450px;
+
+    object-fit: contain;
+
+}
+
+
+/* =====================================================
+   INFORMATIONS DU PRODUIT
+===================================================== */
+
+.sidebares {
+
+    width: 38%;
+
+    padding: 30px;
+
+}
+
+
+.sidebares h2 {
+
+    margin: 0 0 30px 0;
+
+    color: #222;
+
+}
+
+
+/* =====================================================
+   NOM ET PRIX
+===================================================== */
+
+.sid {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 20px 0;
+
+}
+
+
+.gau {
+
+    text-align: left;
+
+}
+
+
+.dr {
+
+    color: rgb(206, 142, 85);
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.pr {
+
+    width: 100%;
+
+    display: block;
+
+    margin: 20px 0 0 0;
+
+    line-height: 1.8;
+
+    color: #555;
+
+}
+
+
+/* =====================================================
+   FORMULAIRE
+===================================================== */
+
+.panier-form {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    margin-top: 30px;
+
+    padding: 0;
+
+}
+
+
+/* =====================================================
+   BOUTON AJOUTER
+===================================================== */
+
+.btn-panier {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px 20px;
+
+    background-color: black;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+.btn-panier:hover {
+
+    background-color: rgb(158, 47, 47);
+
+}
+
+
+/* =====================================================
+   ICÔNE PANIER
+===================================================== */
+
+.panier-icon {
+
+    width: 20px;
+
+    height: 20px;
+
+    margin-right: 10px;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+    width: 100%;
+
+    min-height: 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 30px;
+
+    background-color: rgb(233, 227, 227);
+
+    border-top: 1px solid #ccc;
+
+}
+
+
+/* =====================================================
+   LIENS DU FOOTER
+===================================================== */
+
+.clas1 {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.clas1 ul {
+
+    display: flex;
+
+    gap: 20px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.clas1 li {
+
+    list-style: none;
+
+}
+
+
+.clas1 a {
+
+    color: black;
+
+    text-decoration: none;
+
+}
+
+
+.clas1 a:hover {
+
+    color: rgb(158, 47, 47);
+
+}
+
+
+/* =====================================================
+   BOÎTE CONTACT (popup au clic sur "Contactez-nous")
+===================================================== */
+
+.contact-wrapper {
+
+    position: relative;
+
+}
+
+
+.contact-trigger {
+
+    background: none;
+
+    border: none;
+
+    padding: 0;
+
+    font: inherit;
+
+    color: black;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.contact-trigger:hover {
+
+    color: rgb(158, 47, 47);
+
+}
+
+
+.contact-popup {
+
+    position: absolute;
+
+    bottom: 100%;
+
+    left: 0;
+
+    margin-bottom: 12px;
+
+    min-width: 250px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
+    padding: 16px 18px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(8px);
+
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+
+    z-index: 1100;
+
+}
+
+
+.contact-popup.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+
+.contact-popup::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 20px;
+
+    border-width: 8px;
+
+    border-style: solid;
+
+    border-color: white transparent transparent transparent;
+
+}
+
+
+.contact-popup p {
+
+    margin: 0 0 10px 0;
+
+    font-size: 14px;
+
+    color: #222;
+
+    white-space: nowrap;
+
+}
+
+
+.contact-popup p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.contact-popup i {
+
+    width: 18px;
+
+    margin-right: 8px;
+
+    color: rgb(158, 47, 47);
+
+}
+
+
+.contact-close {
+
+    position: absolute;
+
+    top: 6px;
+
+    right: 8px;
+
+    background: none;
+
+    border: none;
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    color: #999;
+
+    cursor: pointer;
+
+}
+
+
+.contact-close:hover {
+
+    color: rgb(158, 47, 47);
+
+}
+
+
+/* =====================================================
+   TEXTE DU FOOTER
+===================================================== */
+
+.clas2 p {
+
+    margin: 0;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   RÉSEAUX SOCIAUX
+===================================================== */
+
+.icon {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.icon a {
+
+    color: black;
+
+    font-size: 20px;
+
+}
+
+
+/* =====================================================
+   VERSION MOBILE
+===================================================== */
+
+@media only screen and (max-width: 767px) {
+
+
+    /* HEADER */
+
+    .head {
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 15px;
+
+    }
+
+
+    .login img {
+
+        width: 160px;
+
+        height: 80px;
+
+    }
+
+
+    .space ul {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    /* NAVIGATION */
+
+    .nav {
+
+        width: 100%;
+
+        margin: 0;
+
+        min-height: auto;
+
+    }
+
+
+    .nav ul {
+
+        flex-direction: column;
+
+        gap: 0;
+
+    }
+
+
+    .nav ul li {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+
+    .nav ul li a {
+
+        padding: 12px;
+
+    }
+
+
+    /* CONTENU */
+
+    .containtglob {
+
+        width: 100%;
+
+        display: block;
+
+        margin-top: 40px;
+
+        padding: 15px;
+
+    }
+
+
+    .containte {
+
+        width: 100%;
+
+        min-height: auto;
+
+    }
+
+
+    .art {
+
+        min-height: auto;
+
+        padding: 20px;
+
+    }
+
+
+    .art img {
+
+        width: 100%;
+
+        height: auto;
+
+        max-height: none;
+
+    }
+
+
+    .sidebares {
+
+        width: 100%;
+
+        padding: 25px 10px;
+
+    }
+
+
+    /* BOUTON */
+
+    .panier-form {
+
+        width: 100%;
+
+        justify-content: flex-end;
+
+        margin-top: 30px;
+
+    }
+
+
+    .btn-panier {
+
+        font-size: 14px;
+
+        padding: 9px 15px;
+
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+
+    }
+
+
+    .clas1 {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .clas1 ul {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .contact-popup {
+
+        left: 50%;
+
+        transform: translateX(-50%) translateY(8px);
+
+        min-width: 220px;
+
+    }
+
+
+    .contact-popup.active {
+
+        transform: translateX(-50%) translateY(0);
+
+    }
+
+
+    .contact-popup::after {
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+    }
+
+}

@@ -1,0 +1,1381 @@
+/* =====================================================
+   STYLE GÉNÉRAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222;
+}
+
+
+/* =====================================================
+   HEADER FIXE
+===================================================== */
+
+.headercl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: #f8f8f8;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   PARTIE SUPÉRIEURE DU HEADER
+===================================================== */
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    min-height: 110px;
+
+    padding: 5px 40px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login img {
+    width: 200px !important;
+    height: 100px !important;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   BOUTONS COMPTE
+===================================================== */
+
+.space ul {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.space ul li {
+    list-style: none;
+}
+
+
+/* Bouton général */
+
+.btn-compte {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    background-color: #eeeeee;
+    color: #222;
+
+    border: 1px solid #cccccc;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Bouton créer un compte */
+
+.btn-compte:hover {
+    background-color: rgb(158, 47, 47);
+
+    color: white;
+
+    border-color: rgb(158, 47, 47);
+}
+
+
+/* Bouton connexion */
+
+.btn-compte-primaire {
+    background-color: black;
+
+    color: white;
+
+    border: 1px solid black;
+}
+
+.btn-compte-primaire:hover {
+    background-color: rgb(158, 47, 47);
+
+    color: white;
+}
+
+
+/* Bouton déconnexion */
+
+.btn-compte-danger {
+    background-color: rgb(158, 47, 47);
+
+    color: white;
+
+    border: 1px solid rgb(158, 47, 47);
+}
+
+.btn-compte-danger:hover {
+    background-color: #7a2323;
+
+    color: white;
+}
+
+
+/* =====================================================
+   NAVIGATION DES CATÉGORIES
+===================================================== */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100% - 80px);
+
+    min-height: 60px;
+
+    margin: 0 auto;
+
+    padding: 10px 30px;
+
+    background-color: black;
+
+    border: 1px solid black;
+
+    border-radius: 4px;
+}
+
+
+/* Liste des catégories */
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Chaque catégorie */
+
+.nav ul li {
+    list-style: none;
+
+    margin: 0 35px;
+}
+
+
+/* Liens des catégories */
+
+.nav ul li a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 16px;
+
+    white-space: nowrap;
+
+    padding: 10px 5px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Effet au survol */
+
+.nav ul li a:hover {
+    color: #3498db;
+
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   CONTENU PRINCIPAL
+===================================================== */
+
+.page-content {
+    width: 100%;
+
+    max-width: 1000px;
+
+    min-height: 600px;
+
+    margin: 180px auto 50px auto;
+
+    padding: 30px;
+}
+
+
+/* =====================================================
+   PAGE CONNEXION
+===================================================== */
+
+.connexion-page {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    max-width: 100%;
+
+    min-height: calc(100vh - 300px);
+
+    margin-top: 180px;
+
+    padding: 20px;
+}
+
+
+/* Boîte de connexion façon Facebook */
+
+.login-card {
+    width: 100%;
+
+    max-width: 400px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddfe2;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 10px 24px rgba(0, 0, 0, 0.12);
+
+    padding: 34px 30px 26px 30px;
+}
+
+.login-card h2.text-center {
+    margin: 0 0 26px 0;
+
+    font-size: 24px;
+}
+
+.login-card .form-group {
+    max-width: none;
+
+    margin: 0 0 16px 0;
+}
+
+.login-card .form-group label {
+    font-size: 13px;
+
+    color: #444;
+}
+
+.login-card .form-group input {
+    padding: 14px 16px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccd0d5;
+
+    border-radius: 6px;
+
+    background-color: #f5f6f7;
+}
+
+.login-card .form-group input:focus {
+    background-color: #ffffff;
+
+    border-color: black;
+}
+
+.login-card .oublier {
+    margin: 4px 0 18px 0;
+
+    font-size: 14px;
+}
+
+.login-card .btn.btn-primary {
+    width: 100%;
+
+    padding: 13px;
+
+    font-size: 17px;
+
+    border-radius: 6px;
+}
+
+
+/* Champ mot de passe avec icône œil */
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+
+    padding-right: 44px;
+}
+
+.password-toggle {
+    position: absolute;
+
+    top: 50%;
+
+    right: 12px;
+
+    transform: translateY(-50%);
+
+    background: none;
+
+    border: none;
+
+    padding: 4px;
+
+    color: #777;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.password-toggle:hover {
+    color: #333;
+}
+
+
+/* =====================================================
+   SLIDER
+===================================================== */
+
+#produits {
+    width: 100%;
+
+    margin-top: 180px;
+
+    padding: 20px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    border: 1px solid #ccc;
+}
+
+.slider {
+    display: flex !important;
+
+    gap: 15px;
+
+    height: 500px;
+
+    animation-name: mesimages;
+
+    animation-duration: 12s;
+
+    animation-iteration-count: infinite;
+}
+
+.imag img {
+    width: 800px !important;
+
+    max-width: 1000px;
+
+    height: 600px !important;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes mesimages {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-650px);
+    }
+
+    75% {
+        transform: translateX(-1280px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =====================================================
+   COLONNES
+===================================================== */
+
+.colonnes-wrapper {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 70px;
+
+    width: 100%;
+
+    margin: 30px auto 0 auto;
+
+    padding: 20px;
+}
+
+.colonne {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* Grande image */
+
+.header2 img,
+.colonne > .p-2 img {
+    width: 464px;
+
+    height: 464px;
+
+    object-fit: cover;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   GRILLE PETITES IMAGES
+===================================================== */
+
+.content1,
+.content3 {
+    display: grid;
+
+    grid-template-columns: repeat(2, 220px);
+
+    grid-template-rows: repeat(2, auto);
+
+    gap: 24px;
+
+    width: 464px;
+}
+
+.content1 img,
+.content3 img {
+    width: 220px;
+
+    height: 220px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   CONTENEUR IMAGE (petites cartes produit)
+===================================================== */
+
+.image-container {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+
+    background:
+        linear-gradient(
+            to bottom,
+            #e0e0e0 0%,
+            #ffffff 20%,
+            #ffffff 70%,
+            #f9f9f9 100%
+        );
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.image-container:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.grayscale-img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    order: 2;
+
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover .grayscale-img {
+    transform: scale(1.05);
+}
+
+
+/* Nom du produit et prix, sous l'image */
+
+.image-container .cl {
+    order: 1;
+
+    margin: 0;
+
+    padding: 8px 10px 4px 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #222;
+
+    text-align: left;
+}
+
+/* Prix : aligné à droite et coloré en jaune */
+
+.image-container .pi {
+    display: block;
+
+    text-align: right;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #f5c518;
+
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   FORMULAIRES
+===================================================== */
+
+.form-group {
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 0 auto 18px auto;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: black;
+}
+
+
+/* =====================================================
+   BOUTON PRINCIPAL
+===================================================== */
+
+.btn.btn-primary {
+    display: inline-block;
+
+    padding: 10px 25px;
+
+    background-color: black;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: background-color 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: rgb(158, 47, 47);
+}
+
+
+/* =====================================================
+   TITRES
+===================================================== */
+
+h2.text-center {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   MESSAGES D'ERREUR
+===================================================== */
+
+.error,
+.text-danger {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #dc3545;
+
+    font-size: 14px;
+}
+
+.error-message {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 160px;
+
+    text-align: center;
+
+    color: white;
+
+    background-color: #dc3545;
+}
+
+
+/* =====================================================
+   MESSAGE DE SUCCÈS
+===================================================== */
+
+.success-message {
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 0 auto 20px auto;
+
+    padding: 14px 18px;
+
+    text-align: center;
+
+    color: #155724;
+
+    background-color: #d4edda;
+
+    border: 1px solid #c3e6cb;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   PANIER
+===================================================== */
+
+.panier-table-wrapper {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    overflow-x: auto;
+}
+
+.panier-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.panier-table thead {
+    background-color: black;
+
+    color: white;
+}
+
+.panier-table th,
+.panier-table td {
+    padding: 14px 16px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #eee;
+}
+
+.panier-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.panier-produit {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.panier-img {
+    width: 55px;
+
+    height: 55px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+.panier-prix {
+    color: #f5c518;
+
+    font-weight: bold;
+
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   LIEN MOT DE PASSE OUBLIÉ
+===================================================== */
+
+.oublier {
+    margin-bottom: 20px;
+}
+
+.oublier a {
+    color: #333;
+
+    text-decoration: none;
+}
+
+.oublier a:hover {
+    color: rgb(158, 47, 47);
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    width: 100%;
+
+    min-height: 100px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background-color: rgb(233, 227, 227);
+
+    padding: 20px 30px;
+
+    margin: 50px auto 0 auto;
+
+    border-top: 1px solid #ccc;
+}
+
+
+/* Liens footer */
+
+.clas1 {
+    display: flex;
+
+    align-items: center;
+}
+
+.clas1 ul {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.clas1-titre {
+    font-weight: bold;
+
+    font-size: 16px;
+
+    margin-bottom: 4px;
+
+    color: black;
+}
+
+.clas1 ul li {
+    color: black;
+
+    font-size: 14px;
+}
+
+.clas1 ul li i {
+    width: 18px;
+
+    margin-right: 6px;
+
+    color: rgb(158, 47, 47);
+}
+
+
+/* =====================================================
+   BOÎTE CONTACT (popup au clic sur "Contactez-nous")
+===================================================== */
+
+.contact-wrapper {
+    position: relative;
+}
+
+.contact-trigger {
+    background: none;
+
+    border: none;
+
+    padding: 0;
+
+    font: inherit;
+
+    font-weight: bold;
+
+    color: black;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+.contact-trigger:hover {
+    color: rgb(158, 47, 47);
+}
+
+.contact-popup {
+    position: absolute;
+
+    bottom: 100%;
+
+    left: 0;
+
+    margin-bottom: 12px;
+
+    min-width: 250px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
+    padding: 16px 18px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(8px);
+
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+
+    z-index: 1100;
+}
+
+.contact-popup.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.contact-popup::after {
+    content: "";
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 20px;
+
+    border-width: 8px;
+
+    border-style: solid;
+
+    border-color: white transparent transparent transparent;
+}
+
+.contact-popup p {
+    margin: 0 0 10px 0;
+
+    font-size: 14px;
+
+    color: #222;
+
+    white-space: nowrap;
+}
+
+.contact-popup p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-popup i {
+    width: 18px;
+
+    margin-right: 8px;
+
+    color: rgb(158, 47, 47);
+}
+
+.contact-close {
+    position: absolute;
+
+    top: 6px;
+
+    right: 8px;
+
+    background: none;
+
+    border: none;
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    color: #999;
+
+    cursor: pointer;
+}
+
+.contact-close:hover {
+    color: rgb(158, 47, 47);
+}
+
+.clas1 a {
+    color: black;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.clas1 a:hover {
+    color: rgb(158, 47, 47);
+}
+
+
+/* Texte central */
+
+.clas2 {
+    display: flex;
+
+    align-items: center;
+}
+
+.clas2 p {
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: black;
+}
+
+
+/* Réseaux sociaux */
+
+.icon {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.icon a {
+    color: black;
+
+    font-size: 20px;
+
+    transition: all 0.3s ease;
+}
+
+.icon a:hover {
+    color: rgb(158, 47, 47);
+
+    transform: scale(1.2);
+}
+
+
+/* =====================================================
+   RESPONSIVE TABLETTE
+===================================================== */
+
+@media only screen and (max-width: 1000px) {
+
+    .head {
+        padding: 5px 20px;
+    }
+
+    .login img {
+        width: 170px !important;
+
+        height: 85px !important;
+    }
+
+    .nav ul li {
+        margin: 0 15px;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+    }
+
+    .colonnes-wrapper {
+        gap: 30px;
+    }
+
+    .content1,
+    .content3 {
+        grid-template-columns: repeat(2, 180px);
+
+        gap: 18px;
+
+        width: 378px;
+    }
+
+    .content1 img,
+    .content3 img {
+        width: 180px;
+
+        height: 180px;
+    }
+
+    .header2 img,
+    .colonne > .p-2 img {
+        width: 378px;
+
+        height: 378px;
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE MOBILE
+===================================================== */
+
+@media only screen and (max-width: 767px) {
+
+    /* Header */
+
+    .head {
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 10px;
+
+        min-height: 170px;
+    }
+
+    .login img {
+        width: 150px !important;
+
+        height: 75px !important;
+    }
+
+
+    /* Boutons */
+
+    .space ul {
+        justify-content: center;
+
+        gap: 8px;
+    }
+
+    .btn-compte {
+        padding: 8px 12px;
+
+        font-size: 12px;
+    }
+
+
+    /* Navigation */
+
+    .nav {
+        width: calc(100% - 20px);
+
+        height: auto;
+
+        padding: 15px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav ul li {
+        margin: 0;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+    }
+
+
+    /* Contenu */
+
+    .page-content {
+        width: 100%;
+
+        margin-top: 250px;
+
+        padding: 15px;
+    }
+
+    .connexion-page {
+        margin-top: 250px;
+    }
+
+
+    /* Slider */
+
+    #produits {
+        margin-top: 250px;
+
+        padding: 10px;
+    }
+
+    #produits .slider {
+        flex-direction: column;
+
+        height: auto;
+
+        align-items: center;
+    }
+
+    .imag {
+        width: 100%;
+    }
+
+    .imag img {
+        width: 100% !important;
+
+        height: auto !important;
+    }
+
+
+    /* Colonnes */
+
+    .colonnes-wrapper {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+
+        margin-top: 30px;
+    }
+
+    .header2 img,
+    .colonne > .p-2 img {
+        width: 300px;
+
+        height: 300px;
+    }
+
+    .content1,
+    .content3 {
+        width: 300px;
+
+        grid-template-columns: repeat(2, 138px);
+
+        grid-template-rows: repeat(2, auto);
+
+        gap: 16px;
+    }
+
+    .content1 img,
+    .content3 img {
+        width: 138px;
+
+        height: 138px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 15px;
+
+        padding: 25px 15px;
+    }
+
+    .clas1 ul {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .contact-popup {
+        left: 50%;
+
+        transform: translateX(-50%) translateY(8px);
+
+        min-width: 220px;
+    }
+
+    .contact-popup.active {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    .contact-popup::after {
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    .clas2 p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =====================================================
+   TRÈS PETITS ÉCRANS
+===================================================== */
+
+@media only screen and (max-width: 400px) {
+
+    .space ul {
+        flex-direction: column;
+    }
+
+    .btn-compte {
+        width: 180px;
+
+        text-align: center;
+    }
+
+    .page-content {
+        margin-top: 300px;
+    }
+
+}
