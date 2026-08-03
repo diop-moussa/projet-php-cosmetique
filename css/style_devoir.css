@@ -1379,3 +1379,12 @@ h2.text-center {
     }
 
 }
+.password-toggle{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    z-index: 99999;
+    background: red;
+    border: 2px solid blue;
+}

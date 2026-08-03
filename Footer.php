@@ -41,7 +41,7 @@
             <i class="fab fa-instagram"></i>
         </a>
 
-        <a href="https://www.linkedin.com/in/moussa-diop-868087363" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/moussa-diop-miage" target="_blank" rel="noopener">
             <i class="fab fa-linkedin"></i>
         </a>
 

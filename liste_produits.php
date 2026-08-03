@@ -10,9 +10,8 @@ require_once("conf.php");
 $con = ouvrirRD();
 
 $requete = "SELECT p.*, c.nomcategorie
-            FROM produits p
-            LEFT JOIN categories c
-            ON p.categorie = c.idcategorie
+            FROM produits p , categories c
+            where  p.categorie = c.idcategorie
             ORDER BY p.idproduit";
 
 $resultat = mysqli_query($con, $requete);
