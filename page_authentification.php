@@ -88,7 +88,7 @@
 
                 <p class="oublier">
 
-                    <a href="formpasswordOublie.php">
+                    <a href="formpasswordoublie.php">
                         Mot de passe oublié ?
                     </a>
 

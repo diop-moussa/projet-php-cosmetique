@@ -46,7 +46,7 @@ $con = ouvrirRD();
                 <?php else: ?>
 
                     <li>
-                        <a href="Deconnexion.php"
+                        <a href="deconnexion.php"
                            class="btn-compte btn-compte-danger">
                             Déconnexion
                         </a>

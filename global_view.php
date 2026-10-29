@@ -34,7 +34,7 @@ require_once("admin_auth.php");
 
             <button class="bu">
 
-                <a href="Deconnexion.php" class="d">
+                <a href="deconnexion.php" class="d">
                     Déconnexion
                 </a>
 

@@ -224,7 +224,7 @@ if (!$resultat) {
                             <td class="index2">
 
                                 <a
-                                    href="Supprimer_produit.php?id=<?php echo $ligne["idproduit"]; ?>"
+                                    href="supprimer_produit.php?id=<?php echo $ligne["idproduit"]; ?>"
                                     onclick="return confirm('Voulez-vous vraiment supprimer ce produit ?');">
 
                                     Supprimer

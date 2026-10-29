@@ -146,7 +146,7 @@ $resultat = mysqli_stmt_get_result($stmt);
 
                     <li>
 
-                        <a href="Deconnexion.php">
+                        <a href="deconnexion.php">
 
                             Déconnexion
 

@@ -150,7 +150,7 @@ if (!$resultat) {
 
                             <td class="index2">
 
-                                <a href="Supprimer_categorie.php?id=<?php echo $ligne["idcategorie"]; ?>"
+                                <a href="supprimer_categorie.php?id=<?php echo $ligne["idcategorie"]; ?>"
                                    onclick="return confirm('Voulez-vous vraiment supprimer cette catégorie ?');">
 
                                     Supprimer

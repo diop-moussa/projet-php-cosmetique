@@ -7,7 +7,7 @@ require_once("conf.php");
 $con = ouvrirRD();
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    header("Location: formpasswordOublie.php");
+    header("Location: formpasswordoublie.php");
     exit();
 }
 
@@ -17,13 +17,13 @@ $confirmation = isset($_POST['confirmation_motpasse']) ? $_POST['confirmation_mo
 
 // Vérification des champs
 if ($email === '' || $nouveau === '' || $confirmation === '') {
-    header("Location: formpasswordOublie.php?error=champs_vides");
+    header("Location: formpasswordoublie.php?error=champs_vides");
     exit();
 }
 
 // Vérification de la correspondance des mots de passe
 if ($nouveau !== $confirmation) {
-    header("Location: formpasswordOublie.php?error=mismatch");
+    header("Location: formpasswordoublie.php?error=mismatch");
     exit();
 }
 
@@ -37,7 +37,7 @@ $resultCheck = mysqli_stmt_get_result($stmtCheck);
 if (mysqli_num_rows($resultCheck) === 0) {
     mysqli_stmt_close($stmtCheck);
     mysqli_close($con);
-    header("Location: formpasswordOublie.php?error=email_introuvable");
+    header("Location: formpasswordoublie.php?error=email_introuvable");
     exit();
 }
 
