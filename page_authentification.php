@@ -29,17 +29,23 @@
 
         <?php if (isset($_GET['success'])): ?>
 
-            <div class="success-message">
-                Votre compte a été créé avec succès ! Vous pouvez maintenant vous connecter.
-            </div>
+         <div class="success-message">
+             Votre compte a été créé avec succès ! Vous pouvez maintenant vous connecter.
+         </div>
 
-        <?php elseif (isset($_GET['reset'])): ?>
+         <?php elseif (isset($_GET['reset'])): ?>
 
-            <div class="success-message">
-                Votre mot de passe a été réinitialisé avec succès ! Vous pouvez maintenant vous connecter.
-            </div>
+          <div class="success-message">
+           Votre mot de passe a été réinitialisé avec succès ! Vous pouvez maintenant vous connecter.
+         </div>
 
-        <?php endif; ?>
+         <?php elseif (isset($_GET['error'])): ?>
+
+          <div class="error-message">
+          E-mail ou mot de passe incorrect.
+         </div>
+
+       <?php endif; ?>
 
         <form method="post" action="conn.php">
 

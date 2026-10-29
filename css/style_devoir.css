@@ -1388,3 +1388,12 @@ h2.text-center {
     background: red;
     border: 2px solid blue;
 }
+.error-message {
+    background: #fdecea;
+    color: #b00020;
+    border: 1px solid #f5c2c7;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
